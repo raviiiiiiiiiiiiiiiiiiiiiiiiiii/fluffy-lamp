@@ -12,6 +12,7 @@
         background: #2b0030;
         color: #fff;
         line-height: 1.6;
+        padding-bottom: 70px; /* space for sticky bar */
     }
 
     header {
@@ -92,23 +93,185 @@
     .call { background: #6c1616; }
     .wa { background: #128c23; }
 
-    /* TABLE */
-    table {
+    /* STICKY FOOTER BAR */
+    .sticky-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
         width: 100%;
-        border-collapse: collapse;
-        margin: 20px 0;
+        background: #1e001f;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-top: 2px solid #3bd65a;
+        z-index: 999;
+    }
+
+    .sticky-btn {
+        flex: 1;
+        margin: 0 5px;
+        text-align: center;
+        padding: 12px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #fff;
         font-size: 16px;
     }
 
-    th, td {
-        padding: 12px;
-        border: 1px solid rgba(255,255,255,0.1);
-        text-align: left;
-    }
+    .sticky-call { background: #6c1616; }
+    .sticky-wa { background: #128c23; }
 
-    th {
-        background: rgba(255,255,255,0.15);
+    footer {
+        text-align: center;
+        padding: 25px;
+        margin-top: 30px;
+        background: #1d001f;
+        font-size: 14px;
+        color: #aaa;
     }
+</style>
+</head>
+
+<body>
+
+<header>Your Website Header</header>
+
+<!-- SECTION 1: EMPTY INTRO -->
+<section>
+    <h2>Intro Section</h2>
+    <div class="text-block"></div>
+</section>
+
+<!-- SECTION 2: PROFILE CARDS -->
+<section>
+    <h2>Profiles</h2>
+
+    <div class="grid">
+
+        <!-- 1. Veena -->
+        <div class="card">
+            <img src="https://i.ibb.co/QvNm6L9w/Smart-Select-20251205-094614-Chrome.jpg">
+            <div class="card-name">Veena</div>
+            <div class="actions">
+                <a class="btn call" href="tel:+919716975051">Call</a>
+                <a class="btn wa" href="https://wa.me/9190334935001">WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- 2. Noorie -->
+        <div class="card">
+            <img src="https://i.ibb.co/67pwwt7N/Smart-Select-20251205-094622-Chrome.jpg">
+            <div class="card-name">Noorie</div>
+            <div class="actions">
+                <a class="btn call" href="tel:+919716975051">Call</a>
+                <a class="btn wa" href="https://wa.me/9190334935001">WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- 3. Divya -->
+        <div class="card">
+            <img src="https://i.ibb.co/bjZZCkkf/Smart-Select-20251205-094629-Chrome.jpg">
+            <div class="card-name">Divya</div>
+            <div class="actions">
+                <a class="btn call" href="tel:+919716975051">Call</a>
+                <a class="btn wa" href="https://wa.me/9190334935001">WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- 4. Rupali -->
+        <div class="card">
+            <img src="https://i.ibb.co/FLcvTNLr/Smart-Select-20251205-094638-Chrome.jpg">
+            <div class="card-name">Rupali</div>
+            <div class="actions">
+                <a class="btn call" href="tel:+919716975051">Call</a>
+                <a class="btn wa" href="https://wa.me/9190334935001">WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- 5. Afreen -->
+        <div class="card">
+            <img src="https://i.ibb.co/x8Gq7vTY/Smart-Select-20251205-094646-Chrome.jpg">
+            <div class="card-name">Afreen</div>
+            <div class="actions">
+                <a class="btn call" href="tel:+919716975051">Call</a>
+                <a class="btn wa" href="https://wa.me/9190334935001">WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- 6. Sheena -->
+        <div class="card">
+            <img src="https://i.ibb.co/BKcw110n/Smart-Select-20251205-094654-Chrome.jpg">
+            <div class="card-name">Sheena</div>
+            <div class="actions">
+                <a class="btn call" href="tel:+919716975051">Call</a>
+                <a class="btn wa" href="https://wa.me/9190334935001">WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- 7. Deepika -->
+        <div class="card">
+            <img src="https://i.ibb.co/VphDRJGc/Smart-Select-20251205-094701-Chrome.jpg">
+            <div class="card-name">Deepika</div>
+            <div class="actions">
+                <a class="btn call" href="tel:+919716975051">Call</a>
+                <a class="btn wa" href="https://wa.me/9190334935001">WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- 8. Maggie -->
+        <div class="card">
+            <img src="https://i.ibb.co/v4B4mQBj/Smart-Select-20251205-094708-Chrome.jpg">
+            <div class="card-name">Maggie</div>
+            <div class="actions">
+                <a class="btn call" href="tel:+919716975051">Call</a>
+                <a class="btn wa" href="https://wa.me/9190334935001">WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- 9. Angela -->
+        <div class="card">
+            <img src="https://i.ibb.co/ZztDDKgC/Smart-Select-20251205-094717-Chrome.jpg">
+            <div class="card-name">Angela</div>
+            <div class="actions">
+                <a class="btn call" href="tel:+919716975051">Call</a>
+                <a class="btn wa" href="https://wa.me/9190334935001">WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- 10. Riya -->
+        <div class="card">
+            <img src="https://i.ibb.co/zVW0PgXY/Smart-Select-20251205-094725-Chrome.jpg">
+            <div class="card-name">Riya</div>
+            <div class="actions">
+                <a class="btn call" href="tel:+919716975051">Call</a>
+                <a class="btn wa" href="https://wa.me/9190334935001">WhatsApp</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- EMPTY SECTIONS FOR YOU TO FILL -->
+<section><h2>Section</h2><div class="text-block"></div></section>
+<section><h2>Section</h2><div class="text-block"></div></section>
+<section><h2>Section</h2><div class="text-block"></div></section>
+<section><h2>Section</h2><div class="text-block"></div></section>
+<section><h2>Section</h2><div class="text-block"></div></section>
+<section><h2>Section</h2><div class="text-block"></div></section>
+<section><h2>Section</h2><div class="text-block"></div></section>
+<section><h2>Section</h2><div class="text-block"></div></section>
+
+<footer>Footer Section</footer>
+
+<!-- STICKY FOOTER BAR -->
+<div class="sticky-bar">
+    <a class="sticky-btn sticky-call" href="tel:+919716975051">📞 Call</a>
+    <a class="sticky-btn sticky-wa" href="https://wa.me/9190334935001">💬 WhatsApp</a>
+</div>
+
+</body>
+</html>    }
 
     footer {
         text-align: center;
